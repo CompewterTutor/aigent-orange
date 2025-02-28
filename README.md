@@ -35,14 +35,15 @@ I decided to try out this workflow and thought it would be nice to have a github
         3. @TODO
         4. @GUIDELINES
         5. @REVIEW
-    - Prompt AI: ```
+    - Prompt AI: 
+    ```
         Continue working on the project in @project_folder. Follow the development guidelines in @development guidelines, and remember everything in @memory.
     ```
 
 
 ## Tips
 
-Use a good model
-Make a good plan
-Keep chats small
+* Use a good model
+* Make a good plan
+* Keep chats small
 
