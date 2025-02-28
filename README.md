@@ -1,5 +1,5 @@
 # AIgent Orange
-> AI project template for AI Agent Development
+> AI project template for AI Agentic Development
 
 ## Credit
 Full credit for starting this project and developing this workflow goes to John at Generaite Labs: https://generaitelabs.com/one-agentic-coding-workflow-to-rule-them-all/
