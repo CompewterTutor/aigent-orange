@@ -6,7 +6,7 @@
 @TODO = @project_directory/llm_brain/TODO.md
  
 
-You should do task-based development. For every task, you should write the tests, implement the code, and run the tests to make sure everything works. Use `dotnet test` to run the tests or use `dotnet test --filter "FullyQualifiedName~TypeConversionTests"` to run a specific test.
+You should do task-based development. For every task, you should write the tests, implement the code, and run the tests to make sure everything works.
 
 When the tests pass:
 * Update the todo list to reflect the task being completed
