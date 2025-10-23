@@ -1,6 +1,6 @@
 {
   "name": "aigent-orange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI project template for AI Agentic Development",
   "main": "index.js",
   "scripts": {
