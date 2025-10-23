@@ -219,8 +219,8 @@ Security updates will be documented here with:
 ### Contribution Guidelines
 Contributions are welcome and encouraged! Please see:
 - `CONTRIBUTING.md` for contribution guidelines
-- `llm_brain/REVIEW.md` for code review standards
-- `llm_brain/GUIDELINES.md` for development standards
+- `.llm/REVIEW.md` for code review standards
+- `.llm/GUIDELINES.md` for development standards
 
 ### Contributor Recognition
 Contributors will be recognized in:
@@ -234,9 +234,9 @@ Contributors will be recognized in:
 
 ### Documentation
 - **Getting Started**: README.md
-- **Development Guidelines**: llm_brain/GUIDELINES.md
-- **AI Integration**: llm_brain/PROMPTS.md
-- **Framework Templates**: llm_brain/.templates/
+- **Development Guidelines**: .llm/GUIDELINES.md
+- **AI Integration**: .llm/PROMPTS.md
+- **Framework Templates**: .llm/.templates/
 
 ### Community
 - **Issues**: [GitHub Issues](https://github.com/CompewterTutor/aigent-orange/issues)

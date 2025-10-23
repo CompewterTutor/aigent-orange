@@ -1,9 +1,9 @@
 # General Development Rules
 @project_directory = project root directory
-@memory = @project_directory/llm_brain/MEMORY.md
-@brief = @project_directory/llm_brain/BRIEF.md
-@review = @project_directory/llm_brain/REVIEW.md
-@TODO = @project_directory/llm_brain/TODO.md
+@memory = @project_directory/.llm/MEMORY.md
+@brief = @project_directory/.llm/BRIEF.md
+@review = @project_directory/.llm/REVIEW.md
+@TODO = @project_directory/.llm/TODO.md
  
 
 You should do task-based development. For every task, you should write the tests, implement the code, and run the tests to make sure everything works. Use `dotnet test` to run the tests or use `dotnet test --filter "FullyQualifiedName~TypeConversionTests"` to run a specific test.

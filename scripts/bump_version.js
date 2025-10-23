@@ -24,8 +24,8 @@ const CONFIG = {
     'package.json',
     'README.md',
     'CHANGELOG.md',
-    'llm_brain/MEMORY.md',
-    'llm_brain/TODO.md'
+    '.llm/MEMORY.md',
+    '.llm/TODO.md'
   ],
   versionRegex: /(\d+\.\d+\.\d+)/g,
   currentDate: new Date().toISOString().split('T')[0]
@@ -147,7 +147,7 @@ function updateChangelog(newVersion, bumpType) {
  */
 function updateMemory(newVersion) {
   try {
-    let content = fs.readFileSync('llm_brain/MEMORY.md', 'utf8');
+    let content = fs.readFileSync('.llm/MEMORY.md', 'utf8');
     
     // Update version in memory file
     content = content.replace(CONFIG.versionRegex, newVersion);
@@ -158,8 +158,8 @@ function updateMemory(newVersion) {
       `**Memory Last Updated**: ${CONFIG.currentDate}`
     );
     
-    fs.writeFileSync('llm_brain/MEMORY.md', content);
-    console.log(`✓ Updated llm_brain/MEMORY.md to version ${newVersion}`);
+    fs.writeFileSync('.llm/MEMORY.md', content);
+    console.log(`✓ Updated .llm/MEMORY.md to version ${newVersion}`);
   } catch (error) {
     console.error('Error updating MEMORY.md:', error.message);
     process.exit(1);
@@ -171,7 +171,7 @@ function updateMemory(newVersion) {
  */
 function updateTodo(newVersion) {
   try {
-    let content = fs.readFileSync('llm_brain/TODO.md', 'utf8');
+    let content = fs.readFileSync('.llm/TODO.md', 'utf8');
     
     // Update version in todo file
     content = content.replace(CONFIG.versionRegex, newVersion);
@@ -182,8 +182,8 @@ function updateTodo(newVersion) {
       `*Last Updated: ${CONFIG.currentDate}`
     );
     
-    fs.writeFileSync('llm_brain/TODO.md', content);
-    console.log(`✓ Updated llm_brain/TODO.md to version ${newVersion}`);
+    fs.writeFileSync('.llm/TODO.md', content);
+    console.log(`✓ Updated .llm/TODO.md to version ${newVersion}`);
   } catch (error) {
     console.error('Error updating TODO.md:', error.message);
     process.exit(1);
