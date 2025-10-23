@@ -3,6 +3,9 @@
 ## Technology Stack
 This is where we detail the stack and libraries we will be using. Still testing to see if it will be helpful to include documentation links for up-to-date docs on major parts of the stack
 
+## Architecture
+Hexagon/Onion/etc here if you want. I don't find it necessary.
+
 ## Libraries
 
 ## Models

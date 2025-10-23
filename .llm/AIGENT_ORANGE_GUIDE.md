@@ -6,18 +6,6 @@ Full credit for starting this project and developing this workflow goes to John 
 
 I decided to try out this workflow and thought it would be nice to have a github project template to start with and used his prompts and file structure to start with. I've distilled his article in this README but for a full explanation, please visit his blog. Kudos John! He has great articles that I encourage everyone to check out at https://generaitelabs.com/blog/.
 
-## Setup
-
-### .env file setup
-
-Depending on the values you setup for your project in the .env file, the setup script will copy files to certain directories dependent on your editor. Default is vscode copilot as that's what I use. I'll try to flesh out stuff later for cursor, claude code, etc. Pull requests are welcome here. You can either copy the `.llm/.env.sample` file in th
-
-### run setup script
-
-```
-chmod +x cd .llm && chmod +x setup.sh && ./setup.sh
-
-
 ## Usage
 
 1. Write up a project brief - a high level overview of the application.
@@ -25,7 +13,7 @@ chmod +x cd .llm && chmod +x setup.sh && ./setup.sh
     - Features
         - description of feature
         - when (what phase) it will be implemented in the project
-    - Overall architecture (details in ARCHITECTURE.md)
+    - Overall architecture
     - Entities
     - Business Rules
     - Success Metrics
@@ -51,16 +39,12 @@ chmod +x cd .llm && chmod +x setup.sh && ./setup.sh
     ```
         Continue working on the project in @project_folder. Follow the development guidelines in @development guidelines, and remember everything in @memory.
     ```
-
 ## Lazy Vibing
 You can also leave the fate of your project in the LLM's hands if you're really vibing. If you just barely fill out the description of your project in the brief.md and some general features, you can then run the prompt in `.llm/prompts/vibe.brief.prompt.md` and it will try to generate most of the docs for you and you can get started from there or edit what it spit out. I find it useful for small projects but anything larger and you're going to want more control over how you define your project so it's up to you. 
 
-
 ## Tips
 
-* Tell the LLM to lookup the most recent documentation using the Context7 MCP. I can't recommend this enough
-* Use the Awesome Copilot MCP to get documentation on your stack as well. It also has great chat modes, instructions and prompts if you're interested.
-* Use a good model - in copilot I prefer Claude 4.5 to do planning and reviews as well as solving problems. For grunt development, I use GLM4.6 but it does get stuck a lot so I have to call in the big guns.
-* Make a good plan. The more detailed you are, the easier development will be.
-* Keep chats small. Make sure to restart chats often but ensure you keep notes in memory and todo before jumping to a new chat.
+* Use a good model
+* Make a good plan
+* Keep chats small
 
