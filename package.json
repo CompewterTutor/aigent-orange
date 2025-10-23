@@ -1,0 +1,38 @@
+{
+  "name": "aigent-orange",
+  "version": "1.0.0",
+  "description": "AI project template for AI Agentic Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version:patch": "node scripts/bump_version.js patch",
+    "version:minor": "node scripts/bump_version.js minor",
+    "version:major": "node scripts/bump_version.js major",
+    "validate": "node scripts/validate_template.js",
+    "init": "bash llm_brain/init.sh"
+  },
+  "keywords": [
+    "ai",
+    "template",
+    "agentic",
+    "development",
+    "claude",
+    "openai",
+    "automation"
+  ],
+  "author": "AIgent Orange Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CompewterTutor/aigent-orange.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CompewterTutor/aigent-orange/issues"
+  },
+  "homepage": "https://github.com/CompewterTutor/aigent-orange#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -26,7 +26,41 @@ When the tests pass:
 ## Running tests
 When running tests, try to be mindful of the run-length of the tests. Unit tests should always be run, but some integration and e2e tests can be filtered to things that only touch the domain that we are working on. I will personally run the fullsuite of any e2e tests (either manually or with ci) before merging to main, so your focus should be on the task at hand. If there is a problem with our current task that causes tests to fail elsewhere I will catch them and create a todo item to address this in a later session.
 
-You should run tests using the Makefile commands we will create so that we can run the consistently without guessing at paths and commands. If you're creating a test suite for the first time, please note the paths and commands for testing here and create a command in the Makefile to run them.
+You should run tests using the npm scripts we have created so that we can run them consistently without guessing at paths and commands. The available commands are:
+
+### Available Commands
+- `npm test` - Run the test suite
+- `npm run version:patch` - Bump patch version (bug fixes, minor improvements)
+- `npm run version:minor` - Bump minor version (new features, framework additions)
+- `npm run version:major` - Bump major version (breaking changes, architectural changes)
+- `npm run validate` - Validate template integrity (when validation script exists)
+- `npm run init` - Initialize project using the initialization script
+
+### Version Management
+This project uses semantic versioning with automated version management. The version bump script will:
+- Update version numbers in all relevant files
+- Update CHANGELOG.md with new version information
+- Update documentation timestamps
+- Validate that all files were updated correctly
+- Generate appropriate git commands for the release
+
+To use: `npm run version:patch|minor|major`
+
+### Template Validation
+When the validation script is implemented, use `npm run validate` to check:
+- Template structure integrity
+- Documentation completeness
+- Version consistency across files
+- Link validation in documentation
+- Security best practices compliance
+
+### Testing Guidelines
+- Focus on unit tests for the current task domain
+- Integration tests should cover cross-component interactions
+- E2E tests are run manually before main branch merges
+- Test files should be co-located with source files
+- Use descriptive test names and clear assertions
+- Mock external dependencies appropriately
 
 ## Retain Memory
 
@@ -46,4 +80,3 @@ If necessary, update the development guidelines to reflect anything you've learn
 After a while memory and todo will need to be archived into an older file, and summarized in the new memory and todo files. 500-700 lines for each seems to be a good value to look for in practice.
 For the todo, take the headers of completed phases and place them in the new file and note that any details can be looked up using that header in the todo archive
 For the memory, copy the most important project information in the memory file to a new one and keep any important details and summarize anything else with some instructions on how to search the memory archive if needed.
-
