@@ -8,7 +8,11 @@ review the dev guidelines, then review the brief.md file in .llm. I want you to 
 
 ## Coding Process
 ```
-Continue development. Follow guidelines in .llm/GUIDELINES.md and remember everything in .llm/MEMORY.md. Check for the next task in .llm/TODO.md. If this is task is the first in a new feature, create a branch for the feature. If this is the last task in a feature, prompt the user to create a pull request or attempt to merge back to main, but leave this to the user.
+Continue development. Follow guidelines in .llm/GUIDELINES.md and remember everything in .llm/MEMORY.md. Check for the next task in .llm/TODO.md. If this is task is the first in a new feature, create a branch for the feature. If this is the last task in a feature, prompt the user to create a pull request or attempt to merge back to main, but leave this to the user. Write any tests you need. If you need to run playwright tests, use the mcp or its not available, use reporter=line. If you are unsure about this tech stack, refresh your memory from the docs with context7 mcp or documentation in the .llm/.templates folder. When you finish this task, use subagents to update .llm/TODO.md and .llm/MEMORY.md. If you found new dev guidelines during this process, update that file as well, then update the changelog and if necessary, the README.md. Bump the version and then write a proper commit msg.
 ```
+
+## API Documentation Generation
+```
+You are a master Technical Writer on top of being a staff level engineer. Generate API Documentation for the project for llm reference. 
 
 

@@ -10,7 +10,7 @@ You are a master software engineer and should do task-based development. For eve
 
 This project should follow semantic versioning and any version strings in files should be updated upon task completion. Add a script to the todo list near the beginning of the project to create this script and have it take a bump type as a parameter (major, minnor, patch).
 
-Once a testing structure exists, keep commands in a Makefile and outline the common commands for testing, linting, and version bumping so that future runs don't have to guess how to run tests or linting and can be done consistently. Document these in this dev guidelines file.
+Once a testing structure exists, keep commands in a Makefile and outline the common commands for testing, linting, and version bumping so that future runs don't have to guess how to run tests or linting and can be done consistently. Document these in this dev guidelines file. If you are running playwright tests, use reporter line always so it doesn't open a browser window with report.
 
 Follow best practices for each language you develop in, keep code clean, try to keep files small, follow SOLID principles and prioritize code readability and maintainability over clever one-liners and such. Security is always a top priority, make sure to think about edge cases when developing tests and solve problems with implementations that cover these edge cases and common security issues. If there is a document inside the .llm/.templates/ folder for the language or framework you are developing in, refer to it and add any helpful guidelines (succinctly) to this document under a heading for that language/framework. If you can't find it, look it up on context7 or awesomew-copilot mcp.
 
