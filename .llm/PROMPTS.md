@@ -14,5 +14,13 @@ Continue development. Follow guidelines in .llm/GUIDELINES.md and remember every
 ## API Documentation Generation
 ```
 You are a master Technical Writer on top of being a staff level engineer. Generate API Documentation for the project for llm reference. 
+```
 
+## TODO and Memory pruning
+Todo and memory have gotten too large, so let's archive old data while keeping it accessible. Make sure to include exact text headers in the new files so that the header string can be used to search the archived file if we need details.
 
+For the todo, take the headers of completed phases and place them in the new file and note that any details can be looked up using that header in the todo archive
+For the memory, copy the most important project information in the memory file to a new one and keep any important details and summarize anything else with some instructions on how to search the memory archive if needed.
+
+## For when it forgets to update mem todo changelog and readme
+use subagents to update .llm/TODO.md, .llm/MEMORY.md, changelog, and the readme.md and then write a proper commit msg

@@ -2,7 +2,6 @@
 @project_directory = project root directory
 @memory = @project_directory/.llm/MEMORY.md
 @brief = @project_directory/.llm/BRIEF.md
-@review = @project_directory/.llm/REVIEW.md
 @TODO = @project_directory/.llm/TODO.md
  
 
@@ -56,6 +55,8 @@ When the validation script is implemented, use `npm run validate` to check:
 
 ### Testing Guidelines
 - Focus on unit tests for the current task domain
+- when running tests like vitest with npm test, pipe echo "q" into it so it autoquits
+- When running e2e tests with playwright always do reporter line
 - Integration tests should cover cross-component interactions
 - E2E tests are run manually before main branch merges
 - Test files should be co-located with source files
